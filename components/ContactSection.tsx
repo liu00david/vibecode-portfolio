@@ -126,8 +126,7 @@ export function ContactSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto"
             >
-              Have a project in mind or want to collaborate? I'd love to hear from you. 
-              Let's create something amazing together.
+              Got a cool project idea or just want to chat? I'd love to hear from you!
             </motion.p>
           </div>
 
@@ -144,9 +143,9 @@ export function ContactSection() {
                   Let's Connect
                 </h3>
                 <p className="text-secondary-600 dark:text-secondary-400 leading-relaxed mb-8">
-                  I'm always interested in new opportunities and exciting projects. 
-                  Whether you have a question, want to collaborate, or just want to say hi, 
-                  feel free to reach out!
+                  I'm always up for talking about interesting projects or just having a chat. 
+                  Whether you want to collaborate on something cool or just say hi, 
+                  don't hesitate to reach out!
                 </p>
               </div>
 

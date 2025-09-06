@@ -21,8 +21,8 @@ const projects = [
   {
     id: 1,
     title: 'Korelearn',
-    description: 'A Korean learning mobile app for beginners to learn the alphabet and common everyday words with a focus on real and useful dialogues.',
-    longDescription: 'Producing a Korean learning mobile app designed to help beginners master the Korean alphabet and common everyday words. The app focuses on providing a better learning experience than Duolingo by emphasizing real and useful dialogues, alphabet comprehension and dictation, and choice of topics like travel or ordering at a restaurant.',
+    description: 'A Korean learning app I\'m building to help beginners actually learn useful Korean, not just random phrases.',
+    longDescription: 'I\'m working on a Korean learning app that focuses on teaching real, practical Korean that people actually use. Instead of memorizing random phrases, users learn the alphabet properly and practice with conversations they\'d have while traveling or ordering food. The goal is to make something better than Duolingo by focusing on what really matters.',
     image: '/api/placeholder/600/400',
     technologies: ['Figma', 'AWS Firebase', 'AI Integration', 'Mobile Development'],
     features: [
@@ -42,8 +42,8 @@ const projects = [
   {
     id: 2,
     title: 'Valorant Autoplay',
-    description: 'Designed tools to automatically play a popular videogame, helping users accumulate experience points with performance metrics and visual overlays.',
-    longDescription: 'Designed and implemented automation tools for a popular video game to help users accumulate experience points efficiently. The project includes features such as progress bars, tool performance metrics, and dynamic visual overlays to enhance the user experience.',
+    description: 'Built automation tools for a popular game to help players level up more efficiently.',
+    longDescription: 'I created some automation tools for a popular video game that help players gain experience points without having to grind manually. The tools include progress tracking, performance metrics, and visual overlays so users can see how well everything is working.',
     image: '/api/placeholder/600/400',
     technologies: ['Python', 'Game Automation', 'Performance Metrics', 'Visual Overlays'],
     features: [
@@ -100,7 +100,7 @@ export function ProjectsSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto"
             >
-              A showcase of my recent work and side projects, built with modern technologies and best practices.
+              Here are a couple of projects I've been working on in my spare time.
             </motion.p>
           </div>
 
@@ -131,7 +131,7 @@ export function ProjectsSection() {
           {/* Projects Grid */}
           <motion.div
             layout
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto"
           >
             <AnimatePresence>
               {filteredProjects.map((project, index) => {

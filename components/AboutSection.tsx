@@ -102,51 +102,22 @@ export function AboutSection() {
                   My Story
                 </h3>
                 <p className="text-secondary-600 dark:text-secondary-400 leading-relaxed mb-4">
-                  I'm a Software Engineer with over 3 years of experience in cloud infrastructure, 
-                  Kubernetes orchestration, and CI/CD automation. My journey began with a passion 
-                  for building scalable systems and optimizing developer workflows.
+                  Hey there! I'm David, a Software Engineer who loves working with cloud infrastructure 
+                  and making systems run smoother. I got into this field because I enjoy solving 
+                  complex problems and building things that actually work at scale.
                 </p>
                 <p className="text-secondary-600 dark:text-secondary-400 leading-relaxed mb-4">
-                  Currently working at Coinbase, I focus on streamlining build-to-release pipelines 
-                  and implementing secure authentication systems. I specialize in cloud-native 
-                  technologies and have successfully migrated large-scale systems from on-premises 
-                  to cloud infrastructure.
+                  Right now I'm at Coinbase, where I spend my days making our build and deployment 
+                  processes faster and more secure. I've helped migrate big systems from old servers 
+                  to the cloud, and it's pretty satisfying to see everything run better afterward.
                 </p>
                 <p className="text-secondary-600 dark:text-secondary-400 leading-relaxed">
-                  I'm AWS Certified and passionate about leveraging AI-assisted tools to improve 
-                  engineering productivity. When I'm not optimizing systems, you can find me 
-                  working on personal projects or exploring new technologies.
+                  I'm AWS certified and always excited about new tools that can make developers' 
+                  lives easier. When I'm not working, you'll find me tinkering with side projects 
+                  or learning about the latest tech trends.
                 </p>
               </div>
 
-              {/* Stats */}
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { icon: Briefcase, label: 'Years Experience', value: '3+' },
-                  { icon: Award, label: 'Companies', value: '2' },
-                  { icon: Users, label: 'API Requests/Day', value: '1M+' },
-                  { icon: GraduationCap, label: 'Certifications', value: 'AWS' },
-                ].map((stat, index) => {
-                  const Icon = stat.icon
-                  return (
-                    <motion.div
-                      key={stat.label}
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-                      transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
-                      className="bg-white dark:bg-secondary-800 p-6 rounded-xl shadow-lg text-center"
-                    >
-                      <Icon className="h-8 w-8 text-primary-500 mx-auto mb-2" />
-                      <div className="text-2xl font-bold text-secondary-900 dark:text-white">
-                        {stat.value}
-                      </div>
-                      <div className="text-sm text-secondary-600 dark:text-secondary-400">
-                        {stat.label}
-                      </div>
-                    </motion.div>
-                  )
-                })}
-              </div>
             </motion.div>
 
             {/* Skills */}

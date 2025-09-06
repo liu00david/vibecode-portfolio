@@ -107,9 +107,9 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg sm:text-xl text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto leading-relaxed"
             >
-              Software Engineer at Coinbase with expertise in cloud infrastructure, 
-              Kubernetes orchestration, and CI/CD automation. Passionate about building 
-              scalable systems and streamlining developer workflows.
+              I'm a Software Engineer at Coinbase who loves working with cloud infrastructure 
+              and making systems run better. I enjoy solving complex problems and building 
+              things that actually work at scale.
             </motion.p>
           </motion.div>
 
@@ -149,30 +149,6 @@ export function HeroSection() {
             })}
           </motion.div>
 
-          {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center mt-12"
-          >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={scrollToAbout}
-              className="px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl"
-            >
-              Learn More About Me
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white rounded-lg font-semibold transition-all duration-200"
-            >
-              Get In Touch
-            </motion.button>
-          </motion.div>
         </div>
 
         {/* Scroll indicator */}
@@ -186,7 +162,7 @@ export function HeroSection() {
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
             onClick={scrollToAbout}
-            className="p-2 rounded-full bg-white/20 dark:bg-secondary-800/20 backdrop-blur-sm hover:bg-white/30 dark:hover:bg-secondary-800/30 transition-colors duration-200"
+            className="p-3 rounded-full bg-white/20 dark:bg-secondary-800/20 backdrop-blur-sm hover:bg-white/30 dark:hover:bg-secondary-800/30 transition-colors duration-200 border border-white/20 dark:border-secondary-700/20"
           >
             <ChevronDown className="h-6 w-6 text-secondary-600 dark:text-secondary-400" />
           </motion.button>
